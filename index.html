@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eya - Body Signal Journal</title>
+  <style>
+    :root { color-scheme: light; --paper:#fbf5e9; --ink:#1d1d20; --muted:#665f57; --card:#fffdf8; --line:#e7dcc8; --red:#c82034; --green:#00947f; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--paper); color:var(--ink); }
+    main { width:min(920px, calc(100vw - 32px)); margin:0 auto; padding:48px 0; }
+    header { padding:36px; background:var(--card); border:1px solid var(--line); border-radius:18px; }
+    h1 { margin:0 0 12px; font-size:44px; line-height:1.05; letter-spacing:0; }
+    p { color:var(--muted); line-height:1.7; font-weight:600; }
+    nav { display:flex; gap:12px; flex-wrap:wrap; margin-top:24px; }
+    a { color:var(--red); font-weight:800; text-decoration:none; }
+    .pill { padding:10px 14px; border:1px solid var(--line); border-radius:999px; background:white; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:18px; }
+    .card { padding:18px; background:var(--card); border:1px solid var(--line); border-radius:14px; }
+    h2 { margin:0 0 8px; font-size:20px; }
+    @media (max-width:720px) { .grid { grid-template-columns:1fr; } h1 { font-size:36px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Eya</h1>
+      <p>Eya is a private body signal journal for tracking hunger, cravings, meals, weight entries, and food photos. It is designed for reflection, not medical advice or dieting pressure.</p>
+      <nav>
+        <a class="pill" href="./privacy/">Privacy Policy</a>
+        <a class="pill" href="./support/">Support</a>
+      </nav>
+    </header>
+    <section class="grid">
+      <div class="card"><h2>Private by default</h2><p>Your entries are stored locally on your device. Eya does not require an account.</p></div>
+      <div class="card"><h2>Signal tracking</h2><p>Separate hunger, cravings, and eating sessions so you can see patterns over time.</p></div>
+      <div class="card"><h2>Safety first</h2><p>Eya does not encourage prolonged hunger, restrictive eating, or medical decisions.</p></div>
+    </section>
+  </main>
+</body>
+</html>
